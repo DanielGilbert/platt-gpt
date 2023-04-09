@@ -14,7 +14,7 @@ function createResponse(meows) {
 
     let newBubble2Container = document.createElement("div");
     newBubble2Container.classList.add("chat-bubble-container", "chat-gpt-bubble-container");
-    newBubble2Container.innerHTML = '<div class="profile-picture"><img src="/images/avatar'+selectedAvatar+'.png" height="100%" /></div>';
+    newBubble2Container.innerHTML = '<div class="profile-picture"><img src="images/avatar'+selectedAvatar+'.png" height="100%" /></div>';
 
     let newBubble2 = document.createElement("div");
     newBubble2.classList.add("chat-bubble", "chat-gpt-bubble");
@@ -47,7 +47,7 @@ function handleSubmit(event) {
 
     let newBubbleContainer = document.createElement("div");
     newBubbleContainer.classList.add("chat-bubble-container", "user-bubble-container");
-    newBubbleContainer.innerHTML = '<div class="profile-picture"><img src="/images/user.png" height="100%" /></div>';
+    newBubbleContainer.innerHTML = '<div class="profile-picture"><img src="images/user.png" height="100%" /></div>';
 
     let newBubble = document.createElement("div");
     newBubble.classList.add("chat-bubble", "user-bubble");
