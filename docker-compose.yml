@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+    plattgpt:
+        container_name: plattgpt
+        image: plattgpt
+        build:
+            context: .
+            dockerfile: Dockerfile
+        restart: always
+        ports:
+            - "8080:8080"
