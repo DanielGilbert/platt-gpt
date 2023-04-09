@@ -161,6 +161,12 @@ body {
   width: 60%;
 }
 
+@media all and (max-width: 800px) {
+  #form {
+    width: 80%;
+  }
+}
+
 #input-area input {
   width: calc(100% - 2em);
   background-color: #40414F;
