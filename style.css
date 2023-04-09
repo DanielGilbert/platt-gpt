@@ -92,7 +92,7 @@ body {
   background-color: #444654;
 }
 
-.wouter-bubble-container {
+.daniel-bubble-container {
   background-color: #3b3c48;
   padding: 0.5em 0;
 }
@@ -124,7 +124,7 @@ body {
   width: 75%;
 }
 
-.wouter-bubble {
+.daniel-bubble {
   align-self: flex-start;
   color: #d1d5db;
   width: 75%;
@@ -132,7 +132,7 @@ body {
   margin-left: 30px;
 }
 
-.wouter-bubble:nth-of-type(2) {
+.daniel-bubble:nth-of-type(2) {
   margin-left: 0;
 }
 

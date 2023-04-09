@@ -5,7 +5,7 @@ const form = document.getElementById('form');
 const infoBtn = document.getElementById('infoBtn');
 let userMeowed = false;
 
-var selectedAvatar = Math.floor(Math.random() * 8);
+var selectedAvatar = Math.floor(Math.random() * 9);
 
 var greetings = ['Moin.', 'Moin, wat geiht?'];
 var greetingsIndex = Math.floor(Math.random() * greetings.length);
@@ -58,10 +58,10 @@ function handleSubmit(event) {
 
     // Generate the PlattGPT response
     
-    let normalResponses = ['Jo.', 'Tjoar.', 'Isso. Wat de Buur nich kennt, dat frett he nich!'];
+    let normalResponses = ['Jo.', 'Tjoar.','Jo.', 'Tjoar.', 'Jo.', 'Tjoar.'];
     normalResponseIndex = Math.floor(Math.random() * normalResponses.length);
 
-    let questionResponses = ['Jo.','Geiht nich, givt nich!', 'Watt mutt, datt mutt']
+    let questionResponses = ['Jo.','Jo.','Machste nix, kiekste doof.','Jo.','Machste nix, kiekste doof.','Jo.','Jo.','Geiht nich, givt nich!','Jo.','Jo.','Watt mutt, datt mutt']
     questionResponseIndex = Math.floor(Math.random() * questionResponses.length);
 
     if (userString.replace(/[\.,!?]/g,'').toLowerCase() == 'jo' && userMeowed == false) { // Hurray you found some easter eggs🐰🥚
@@ -101,13 +101,13 @@ function handleInfoClick() {
     // Create a chat-bubble-container
     
     let newBubble3Container = document.createElement("div");
-    newBubble3Container.classList.add("chat-bubble-container", "wouter-bubble-container");
+    newBubble3Container.classList.add("chat-bubble-container", "daniel-bubble-container");
     newBubble3Container.innerHTML = '<div class="profile-picture"><img src="/images/daniel.png" height="100%" /></div>';
 
     function createLine(i) { // Create each line seperately, one at a time
         if (i < infoText.length) { // Check if the line exists
             let newBubble3 = document.createElement("div");
-            newBubble3.classList.add("chat-bubble", "wouter-bubble");
+            newBubble3.classList.add("chat-bubble", "daniel-bubble");
             let currentLineText = infoText[i];
             let currentWord = 0;
             let singlelineLoop = setInterval(() => { // Loop over the words, to simulate typing behaviour
