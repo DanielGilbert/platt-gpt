@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   background-color: #343541;
 }
 
@@ -21,7 +21,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 #chatcontainer {
@@ -32,7 +33,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .header {
@@ -64,10 +66,13 @@ body {
   width: 100%;
   margin: 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
+  scrollbar-color: #666 #333;
+  scrollbar-width: thin;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #chat a {
@@ -140,6 +145,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #input-container {
@@ -182,4 +190,28 @@ body {
 .disclaimer a {
   color: #818f7b;
 
+}
+
+/* custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #666;
+}
+
+/* custom scrollbar for dark mode */
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background-color: #555;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+  }
 }
