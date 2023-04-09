@@ -85,13 +85,13 @@ createResponse(greetings[greetingsIndex]);
 
 const infoText = [
     "Hi! Mein Name ist Daniel, und ich schwimme gerade voll auf der AI-Welle. Oder auch nicht.",
-    "Jedenfalls fehlt dem ganzen hier eine ordentliche Portion Gelassenheit. Mudder secht: \"Politiker, die kommen und die gehen ma'.\"",
+    "Jedenfalls war eine Freundin von mir der Meinung, dass in der AI-Landschaft noch eine stoische, norddeutsche AI fehlt.",
     "Daher gibt's jetzt PlattGPT. Die AI antwortet auf jede Frage mit einem vollständigen, norddeutschen Satz. Also sowas wie \"Tjoar.\". Oder \"Jo.\"",
     "Oder so.",
     "...",
     "...",
     "Hier gibt es wirklich keine AI. ;)",
-    'Ehre wem Ehre gebührt: Die Ursprungsidee stammt von <a href="https://github.com/woutervdijke/catgpt" target="_blank">CatGPT</a>, das Papierflieger-Icon ist von FontAwesome, der Benutzeravatar ist von, und die AI-Avatare hat DALL-E 2 generiert.'
+    'Ehre wem Ehre gebührt: Die Ursprungsidee stammt von <a href="https://github.com/woutervdijke/catgpt" target="_blank">CatGPT</a>, das Papierflieger-Icon ist von FontAwesome, der Benutzeravatar ist von Iconsax, und die AI-Avatare hat DALL-E 2 generiert.'
 ]; // Lines of the information chat
 
 
